@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Worldcar, concesionario de vehículos de alta gama.">
+  <title>Worldcar | Vehículos de Alta Gama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <main class="hero" id="inicio">
+    <div class="carousel" aria-label="Galería de vehículos Worldcar">
+      <figure class="slide active">
+        <img src="../assets/images/carrusel/IMAGEN 1.jpg" alt="Vehículo de lujo Worldcar">
+      </figure>
+      <figure class="slide">
+        <img src="../assets/images/carrusel/IMAGEN 2.jpg" alt="Vehículo deportivo Worldcar">
+      </figure>
+      <figure class="slide">
+        <img src="../assets/images/carrusel/IMAGEN 3.jpg" alt="Vehículo premium Worldcar">
+      </figure>
+      <figure class="slide">
+        <img src="../assets/images/carrusel/IMAGEN 4.jpg" alt="Automóvil exclusivo Worldcar">
+      </figure>
+      <figure class="slide">
+        <img src="../assets/images/carrusel/IMAGEN 5.jpg" alt="Modelo seleccionado Worldcar">
+      </figure>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <header class="navbar">
+      <a class="brand" href="#inicio" aria-label="Worldcar inicio">
+        <span class="brand-mark">W</span>
+        <span class="brand-name">WORLDCAR</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir navegación">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sedes">Sedes</a>
+        <a href="#repuestos">Repuestos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+        <a class="login-link" href="#login">Login</a>
+        
+      </nav>
+    </header>
+
+    <div class="hero-content">
+      <p class="eyebrow">Colección seleccionada</p>
+      <h1>Excelencia<br><span>en movimiento.</span></h1>
+      <p class="hero-description">Descubre una selección excepcional de vehículos diseñados para quienes exigen más.</p>
+      <a class="cta" href="#catalogo">
+        Explorar catálogo
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div class="carousel-controls" aria-label="Controles del carrusel">
+      <button class="arrow previous" type="button" aria-label="Imagen anterior">←</button>
+      <div class="carousel-progress">
+        <span class="current-number">01</span>
+        <span class="progress-track"><span class="progress-bar"></span></span>
+        <span class="total-number">05</span>
+      </div>
+      <button class="arrow next" type="button" aria-label="Imagen siguiente">→</button>
+    </div>
+  </main>
+
+  <section class="subscribe" aria-labelledby="subscribe-title">
+    <div class="subscribe-content">
+      <div class="subscribe-copy">
+        <p class="eyebrow">Mantente al día</p>
+        <h2 id="subscribe-title">Recibe novedades <span>de Worldcar.</span></h2>
+        <p class="subscribe-description">Déjanos tu correo y entérate de nuestras novedades y vehículos seleccionados.</p>
+      </div>
+      <form class="subscribe-form" method="post">
+        <label for="subscribe-email">Correo electrónico</label>
+        <div class="subscribe-form-fields">
+          <input id="subscribe-email" name="email" type="email" placeholder="@email.com" autocomplete="email" required>
+          <button type="submit">Enviar <span aria-hidden="true">↗</span></button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
